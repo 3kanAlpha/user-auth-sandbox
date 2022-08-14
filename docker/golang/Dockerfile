@@ -4,7 +4,7 @@ RUN apk update && \
     apk upgrade && \
     apk add git
 
-RUN go install github.com/cespare/reflex
+RUN go install github.com/cespare/reflex@latest
 ENV CGO_ENABLED=0
 
 WORKDIR /go/src/api

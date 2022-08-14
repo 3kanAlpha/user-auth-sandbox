@@ -9,4 +9,4 @@ RUN apk update && \
 
 ADD ./ui/package.json /app
 
-RUN npm install
+RUN yarn install
